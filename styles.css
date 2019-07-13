@@ -1,0 +1,399 @@
+body{
+  width:auto;
+  height:auto;
+  background:url("https://miro.medium.com/max/1838/1*6lJJiXiCnX2peIeLG3oIZg.jpeg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:210% 210%;
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+}
+
+.container1{
+  display:grid;
+  width:100%;
+  height:auto;
+  grid-template-columns:100%;
+  grid-template-rows:10% 125%;
+  background:transparent;
+  margin-left:auto;
+  margin-right:auto;
+  grid-gap:1%;
+  grid-template-areas:
+	"header"
+	"content";
+}
+
+.item1_c1{
+  background:transparent;
+  grid-area:header;
+  text-align:center;
+  font-size:30px;
+}
+
+.item2_c1{
+  background:rgba(238,202,180,0.8);
+  border-radius:10%;
+  width:80%;
+  height:auto;
+  margin-left:10%;
+  margin-right:10%;
+  grid-area:content;
+  display:grid;
+  grid-template-columns:100%;
+  grid-template-rows:5% auto;
+  grid-template-areas:
+	"description"
+	"form";
+}
+
+#description{
+  grid-area:description;
+  background:transparent;
+  justify-self:center;
+  font-size:22px;
+  text-align:center;
+  color:rgb(42,145,140);
+}
+
+.container{
+	display:grid;
+	grid-template-columns:45% 55%;
+	grid-template-rows:repeat(7,10%) repeat(2,auto);
+	grid-template-areas:
+	"label1 input1"
+	"label2 input2"
+	"label3 input3"
+	"label4 input4"
+	"label5 input5"
+	"label6 input6"
+	"label7 input7"
+	"label8 input8"
+	"label9 input9"
+	"submit submit";
+	margin-left:5%;
+	margin-right:5%;
+	background-color:transparent;
+	width:90%;
+	font-size:20px;
+	grid-gap:5% 0%;
+	height:auto;
+}
+.name_label{
+	grid-area:label1;
+	justify-self:start;
+	padding-top:10px;
+	padding-right:60px;
+	padding-left:10px;
+}
+.name_input{
+	grid-area:input1;
+}
+.email_label{
+	grid-area:label2;
+	justify-self:start;
+	padding-top:10px;
+	padding-right:60px;
+	padding-left:10px;
+}
+.email_input{
+	grid-area:input2;
+}
+.age_label{
+	grid-area:label3;
+	justify-self:start;
+	padding-top:10px;
+	padding-right:60px;
+	padding-left:10px;
+}
+.age_input{
+	grid-area:input3;
+}
+.usage_label{
+	grid-area:label4;
+	justify-self:start;
+	padding-top:10px;
+	padding-left:10px;
+}
+.usage_input{
+	grid-area:input4;
+}
+.satisfaction_label{
+	grid-area:label5;
+	justify-self:start;
+	padding-top:10px;
+	padding-left:10px;
+}
+.radio_satisfy{
+	grid-area:input5;
+	line-height:30px;
+}
+.recommendation_label{
+	grid-area:label6;
+	justify-self:start;
+	padding-top:10px;
+	padding-left:10px;
+}
+.radio_recommend{
+	grid-area:input6;
+	line-height:30px;
+}
+.learn_label{
+	grid-area:label7;
+	justify-self:start;
+	padding-top:10px;
+	padding-left:10px;
+}
+.radio_learn{
+	grid-area:input7;
+	line-height:30px;
+}
+.improve_label{
+	grid-area:label8;
+	justify-self:start;
+	padding-top:10px;
+	padding-left:10px;
+}
+.checkbox_improve{
+	grid-area:input8;
+	line-height:30px;
+}
+.comment_label{
+	grid-area:label9;
+	justify-self:start;
+	padding-top:15px;
+	padding-left:10px;
+}
+.textarea_comment{
+	grid-area:input9;
+}
+.button_submit{
+	grid-area:submit;
+	justify-self:center;
+	width:100%;
+}
+
+#name{
+	width:90%;
+	padding:15px 10px;
+	border-radius:25px;
+	border:none;
+	font-size:16px;
+}
+
+#email{
+	width:90%;
+	padding:15px 10px;
+	border-radius:25px;
+	border:none;
+	font-size:16px;
+}
+
+#number{
+	width:90%;
+	padding:15px 10px;
+	border-radius:25px;
+	border:none;
+	font-size:16px;
+}
+
+#dropdown{
+	width:95%;
+	padding:15px 10px;
+	border-radius:25px;
+	border:none;
+	font-size:16px;
+}
+
+#txt_area{
+	width:90%;
+	padding:15px 10px;
+	border-radius:25px;
+	font-size:16px;
+}
+
+#submit{
+	width:50%;
+	padding:15px 15px;
+	border-radius:25px;
+	font-size:16px;
+	background-color:#428bca;
+	border:none;
+	text-align:center;
+	color:white;
+}
+
+@media (max-width: 450px)
+{
+	body{
+	  background-size:170% 170%;
+	}
+	.item2_c1{
+	  border-radius:45px;
+	}
+	.container{
+		display:grid;
+		grid-template-columns:100%;
+		grid-template-rows:repeat(19,auto);
+		grid-template-areas:
+		"label1"
+		"input1"
+		"label2"
+		"input2"
+		"label3"
+		"input3"
+		"label4"
+		"input4"
+		"label5"
+		"input5"
+		"label6"
+		"input6"
+		"label7"
+		"input7"
+		"label8"
+		"input8"
+		"label9"
+		"input9"
+		"submit";
+		margin-left:auto;
+		margin-right:auto%;
+		background-color:transparent;
+		width:90%;
+		font-size:20px;
+		grid-gap:2%;
+		height:auto;
+	}
+	#submit{
+		width:100%;
+	}
+}
+@media (min-width: 451px) and (max-width:540px)
+{
+	.item2_c1{
+	  border-radius:45px;
+	}
+	body{
+	  background-size:170% 170%;
+	}
+	.container{
+		display:grid;
+		grid-template-columns:100%;
+		grid-template-rows:repeat(19,auto);
+		grid-template-areas:
+		"label1"
+		"input1"
+		"label2"
+		"input2"
+		"label3"
+		"input3"
+		"label4"
+		"input4"
+		"label5"
+		"input5"
+		"label6"
+		"input6"
+		"label7"
+		"input7"
+		"label8"
+		"input8"
+		"label9"
+		"input9"
+		"submit";
+		margin-left:auto;
+		margin-right:auto%;
+		background-color:transparent;
+		width:90%;
+		font-size:20px;
+		grid-gap:2%;
+		height:auto;
+	}
+	#submit{
+		width:100%;
+	}
+}
+@media (min-width: 541px) and (max-width:768px)
+{
+	.item2_c1{
+	  border-radius:45px;
+	}
+	.container{
+		display:grid;
+		grid-template-columns:100%;
+		grid-template-rows:repeat(19,auto);
+		grid-template-areas:
+		"label1"
+		"input1"
+		"label2"
+		"input2"
+		"label3"
+		"input3"
+		"label4"
+		"input4"
+		"label5"
+		"input5"
+		"label6"
+		"input6"
+		"label7"
+		"input7"
+		"label8"
+		"input8"
+		"label9"
+		"input9"
+		"submit";
+		margin-left:auto;
+		margin-right:auto%;
+		background-color:transparent;
+		width:90%;
+		font-size:20px;
+		grid-gap:2%;
+		height:auto;
+	}
+	#submit{
+		width:50%;
+		margin-left:25%;
+	}
+}
+@media (min-width: 769px) and (max-width:1024px)
+{
+	.item2_c1{
+	  border-radius:45px;
+	}
+	.container1{
+	  grid-template-rows:1fr 142.5%;
+	}
+	#submit{
+		width:40%;
+		margin-left:25%;
+	}
+}
+@media (min-width: 1025px) and (max-width:1200px)
+{
+	.item2_c1{
+	  border-radius:45px;
+	}
+	.container1{
+	  grid-template-rows:1fr 142.5%;
+	}
+	#submit{
+		width:40%;
+		margin-left:30%;
+	}
+}
+@media (min-width: 1201px)
+{
+	.container1{
+	  grid-template-rows:1fr 142.5%;
+	}
+	#submit{
+		width:30%;
+		margin-left:35%;
+	}
+}
+input[type="radio"]
+{
+	transform:scale(1.7);
+}
+input[type="checkbox"]
+{
+	transform:scale(1.7);
+}

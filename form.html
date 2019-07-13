@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container1">
+		<div class="item1_c1">
+			<h1 id="title">Survey Form</h1>
+		</div>
+		<div class="item2_c1">
+			<p id="description">Share your thoughts to make Duolingo better.</p>
+			<form id="survey-form" action="#" method="POST">
+			<div class="container">
+				<div class="name_label"><label for="name" id="name-label">Name</label></div>
+				<div class="name_input"><input type="text" id="name" name="name" placeholder="Enter your name here" required></div>	
+				<div class="email_label"><label for="email" id="email-label">Email</label></div>
+				<div class="email_input"><input type="email" id="email" name="email" placeholder="Enter email address here" required></div>
+				<div class="age_label"><label for="number" id="number-label">Age</label></div>
+				<div class="age_input"><input type="number" id="number" name="age" placeholder="Enter your age here" min="1" max="130" required></div>
+				
+				<div class="usage_label"><label for="dropdown" id="usage">How often do you use this application? </label></div>
+				<div class="usage_input"><select id="dropdown">
+					<option id="one" value="Regular">Regularly</option>
+					<option id="two" value="Casual">Casual</option>
+					<option id="three" value="Rare">Rare</option>
+					<option id="four" value="Never">Never</option>
+				</select></div>
+				<div class="satisfaction_label"><label id="satisfaction">How satisfied are you?</label></div>
+				<div class="radio_satisfy">
+					<label for="unsatisfied"><input type="radio" name="satisfy" id="unsatisfied" value="Unsatisfied">Unsatisfied</label><br>
+					<label for="neutralSatisfy"><input type="radio" id="neutralSatisfy" name="satisfy" value="neutral">Neutral</label><br>
+					<label for="satisfied"><input type="radio" name="satisfy" id="satisfied" value="Satisfied">Satisfied</label>
+				</div>
+				
+				<div class="recommendation_label"><label id="recommendation">How likely are you to recommend to others?</label></div>
+				<div class="radio_recommend">
+					<label for="unlikely"><input type="radio" name="recommend" id="unlikely" value="Unlikely">Unlikely</label><br>
+					<label for="maybe"><input type="radio" id="maybe" name="recommend" value="Maybe">Maybe</label><br>
+					<label for="definitely"><input type="radio" name="recommend" id="definitely" value="Definitely">Definitely</label>
+				</div>
+				
+				<div class="learn_label"><label id="another">How likely are you to learn another language?</label></div>
+				<div class="radio_learn">
+					<label for="unlikely_another"><input type="radio" name="anotherLang" id="unlikely_another" value="Unlikely">Unlikely</label><br>
+					<label for="neutral_another"><input type="radio" id="neutral_another" name="anotherLang" value="Neutral">Neutral</label><br>
+					<label for="likely"><input type="radio" name="anotherLang" id="likely" value="Likely">Likely</label>
+				</div>
+				
+				<div class="improve_label"><label id="improve">Areas that need improvement</label></div>
+				<div class="checkbox_improve">
+					<label for="vocabulary"><input type="checkbox" id="vocabulary" name="improve[]" value="Vocabulary">Vocabulary</label><br>
+					<label for="speech"><input type="checkbox" id="speech" name="improve[]" value="Speech">Speech</label><br>
+					<label for="listening"><input type="checkbox" id="listening" name="improve[]" value="Speech">Listening</label><br>
+					<label for="written"><input type="checkbox" id="written" name="improve[]" value="Written">Written</label><br>
+					<label for="alphabet"><input type="checkbox" id="alphabet" name="improve[]" value="Alphabet">Alphabet</label><br>
+					<label for="grammer"><input type="checkbox" id="grammer" name="improve[]" value="Grammer">Grammer</label><br>
+					<label for="sentence"><input type="checkbox" id="sentence" name="improve[]" value="Sentence_structure">Sentence structure</label><br>
+					<label for="graphic"><input type="checkbox" id="graphic" name="improve[]" value="Graphics">Graphics</label><br>
+					<label for="animation"><input type="checkbox" id="animation" name="improve[]" value="Animation">Animation</label><br>
+					<label for="sound"><input type="checkbox" id="sound" name="improve[]" value="Sound_effects">Sound effects</label><br>
+					<label for=""><input type="checkbox" id="notification" name="improve[]" value="Notifications">Notifications</label><br>
+					<label for="language"><input type="checkbox" id="language" name="improve[]" value="More_Languages">More Languages</label><br>
+				</div>
+				<div class="comment_label"><label for="comments" id="comment">Comments and Suggestions</label></div>
+				<div class="textarea_comment"><textarea form="survey-form" placeholder="Enter comments and suggestions here" id="txt_area"></textarea></div>
+				
+				<div class="button_submit"><input type="submit" id="submit" value="Submit"></div>
+			</div>			
+			</form>
+		</div>
+    </div> 
+	
+</body>
+<html>
